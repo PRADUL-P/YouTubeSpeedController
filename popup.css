@@ -1,0 +1,89 @@
+body {
+  width: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+#currentSpeed {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 100px;
+  max-height: 140px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  backdrop-filter: blur(8px);
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Glassmorphism style for buttons */
+.control-buttons i {
+  font-size: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-buttons i:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
